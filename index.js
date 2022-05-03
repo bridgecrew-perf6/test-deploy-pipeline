@@ -26,7 +26,7 @@ app.listen(serverPort, () => {
     console.log(`Server running on port ${serverPort}\n`);
 });
 
-app.post('/upload-project', (data) => {
+app.post('/', (data) => {
     console.log('Message received', data);
 });
 

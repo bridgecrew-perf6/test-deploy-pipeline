@@ -14,14 +14,14 @@ function postFormData(formData) {
     const config = {
         method: 'POST',
         headers: new Headers(),
-        mode: 'no-cors',
+        mode: 'cors',
         cache: 'default',
         body: formData,
     };
 
     console.log('POST...');
 
-    const url = 'https://arcade-feu-deploy.herokuapp.com/upload-project';
+    const url = 'https://arcade-feu-deploy.herokuapp.com/';
     // const url = 'http://localhost:9999/upload-project';
     fetch(url, config).then((res) => {
         console.log('Request complete! response:', res);
