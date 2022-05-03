@@ -25,7 +25,7 @@ app.use(cors({
 }));
 
 app.listen(serverPort, () => {
-    console.log(`Server running on port http://localhost:${serverPort}\n`);
+    console.log(`Server running on port ${serverPort}\n`);
 });
 
 app.post('/upload-project', uploadFile);
