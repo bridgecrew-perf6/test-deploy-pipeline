@@ -9,7 +9,7 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "adm-zip": "^0.5.9",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
