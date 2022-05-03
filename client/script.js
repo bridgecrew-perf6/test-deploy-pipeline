@@ -14,10 +14,12 @@ function postFormData(formData) {
     const config = {
         method: 'POST',
         headers: new Headers(),
-        mode: 'cors',
+        mode: 'no-cors',
         cache: 'default',
         body: formData,
     };
+
+    console.log('POST...');
 
     const url = 'https://arcade-feu-deploy.herokuapp.com/upload-project';
     // const url = 'http://localhost:9999/upload-project';
