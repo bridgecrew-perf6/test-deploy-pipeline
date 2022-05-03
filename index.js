@@ -28,7 +28,9 @@ app.listen(serverPort, () => {
     console.log(`Server running on port ${serverPort}\n`);
 });
 
-app.post('/upload-project', uploadFile);
+app.post('/upload-project', (data) => {
+    console.log('Message received', data);
+});
 
 // Configure deploy
 const ftpDeploy = new FtpDeploy();
