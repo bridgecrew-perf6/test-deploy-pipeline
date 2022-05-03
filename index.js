@@ -20,7 +20,9 @@ const extractDir = path.join(__dirname, '/app/');
 const serverPort = 9999;
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: '*',
+}));
 
 app.listen(serverPort, () => {
     console.log(`Server running on port ${serverPort}\n`);

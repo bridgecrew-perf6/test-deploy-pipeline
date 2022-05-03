@@ -11,10 +11,16 @@ function setup() {
 }
 
 function postFormData(formData) {
-    fetch('https://arcade-feu-deploy.herokuapp.com/upload-project', {
+    const config = {
         method: 'POST',
+        headers: new Headers(),
+        mode: 'cors',
+        cache: 'default',
         body: formData,
-    }).then((res) => {
+    };
+
+    console.log('POST...');
+    fetch('https://arcade-feu-deploy.herokuapp.com/upload-project', config).then((res) => {
         console.log('Request complete! response:', res);
     });
 }
