@@ -11,7 +11,7 @@ function setup() {
 }
 
 function postFormData(formData) {
-    fetch('http://localhost:9999/upload-project', {
+    fetch('https://arcade-feu-deploy.herokuapp.com/upload-project', {
         method: 'POST',
         body: formData,
     }).then((res) => {
