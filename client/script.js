@@ -19,8 +19,8 @@ function postFormData(formData) {
         body: formData,
     };
 
-    // const url = 'https://arcade-feu-deploy.herokuapp.com/upload-project';
-    const url = 'http://localhost:9999/upload-project';
+    const url = 'https://arcade-feu-deploy.herokuapp.com/upload-project';
+    // const url = 'http://localhost:9999/upload-project';
     fetch(url, config).then((res) => {
         console.log('Request complete! response:', res);
     });

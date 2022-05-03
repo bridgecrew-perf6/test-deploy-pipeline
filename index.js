@@ -21,8 +21,8 @@ const serverPort = 9999;
 const app = express();
 
 app.use(cors({
-    origin: '*',
-    credentials: true,
+    origin: 'http://127.0.0.1:5500/',
+    // credentials: true,
 }));
 
 app.listen(serverPort, () => {
