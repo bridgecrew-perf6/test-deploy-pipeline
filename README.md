@@ -1,4 +1,4 @@
-# 🧪 Test deploy pipeline - Arcade Hub
+# 🧪 Test deploy pipeline - Axis Hub
 
 You will need an .env file looking like this :
 ```
